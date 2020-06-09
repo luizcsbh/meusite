@@ -1,6 +1,7 @@
 1 - Como organizar modelos em módulos?
 ```
-Para realizar a organização dos modelos em módulos é necessario criar dentro da pasta models criar um arquivo __init__.py para indicar que se trata de módulo.
+Para realizar a organização dos modelos em módulos é necessario criar dentro da 
+pasta models criar um arquivo __init__.py para indicar que se trata de módulo.
 ```
 
 2 - Como criar modelos com herança? De quais tipos?
@@ -10,7 +11,8 @@ Os modelos criados já são herdados de models do pacote django.db
 
 3 - Como criar Enumeration types e usar como choices?
 ```
-Enum é uma classe em python para criar enumerações, que são um conjunto de nomes simbólicos (membros) vinculados a valores constantes únicos.
+Enum é uma classe em python para criar enumerações, que são um conjunto de nomes 
+simbólicos (membros) vinculados a valores constantes únicos.
 import enum
 ```
 ``` python
@@ -42,9 +44,15 @@ link github
 
 5 - O que é, para quê serve e como usar um Proxy no modelo?
 ```
-Ao usar a herança de várias tabelas , uma nova tabela de banco de dados é criada para cada subclasse de um modelo. Esse é geralmente o comportamento desejado, pois a subclasse precisa de um local para armazenar quaisquer campos de dados adicionais que não estão presentes na classe base. Às vezes, no entanto, você deseja alterar apenas o comportamento Python de um modelo - talvez alterar o gerenciador padrão ou adicionar um novo método.
+Ao usar a herança de várias tabelas , uma nova tabela de banco de dados é criada para cada subclasse de um modelo.
+Esse é geralmente o comportamento desejado, pois a subclasse precisa de um local para armazenar quaisquer campos 
+de dados adicionais que não estão presentes na classe base. Às vezes, no entanto, você deseja alterar apenas o 
+comportamento Python de um modelo - talvez alterar o gerenciador padrão ou adicionar um novo método.
 
-É para isso que serve a herança do modelo de proxy: criar um proxy para o modelo original. Você pode criar, excluir e atualizar instâncias do modelo de proxy e todos os dados serão salvos como se você estivesse usando o modelo original (sem proxy). A diferença é que você pode alterar coisas como a ordem do modelo padrão ou o gerente padrão no proxy, sem precisar alterar o original.
+É para isso que serve a herança do modelo de proxy: criar um proxy para o modelo original. Você pode criar,
+excluir e atualizar instâncias do modelo de proxy e todos os dados serão salvos como se você estivesse usando
+o modelo original (sem proxy). A diferença é que você pode alterar coisas como a ordem do modelo padrão ou o 
+gerente padrão no proxy, sem precisar alterar o original.
 ```
 6 - O que faz o método __str__() em uma classe?
 ```
